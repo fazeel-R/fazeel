@@ -1,0 +1,15 @@
+{
+    "adminUrl" : "https://pxnrfortadmin-test.powerofn.in/",
+    "buyerUrl": "https://pxnrfort-test.powerofn.in/",
+    "buyerCreds":{
+        "userName" :"fazeel@ncompass.inc",
+        "password" : "Admin123!"
+    },
+    "adminCreds":{
+        "userName" :"nate+admin@phonexinc.com",
+        "password" : "Admin123!"
+
+    }
+
+
+}
