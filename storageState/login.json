@@ -17,8 +17,36 @@
           "value": "en-US"
         },
         {
+          "name": "CognitoIdentityServiceProvider.4gfjbfaa058if7qt6pqnr3q5qi.fazeel@ncompass.inc.clockDrift",
+          "value": "5"
+        },
+        {
           "name": "PxCurrencyValues",
           "value": "{\"currencyPrecision\":\"3\",\"currencyCode\":\"EUR\",\"currencySymbol\":\"€\"}"
+        },
+        {
+          "name": "CognitoIdentityServiceProvider.4gfjbfaa058if7qt6pqnr3q5qi.fazeel@ncompass.inc.refreshToken",
+          "value": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.Mgmll_AUkxr4LOiAEEg01jOCn_ZonWN687S_BPi6K_83LkbuLSPk_qmmGWR3thuh5TShrzIht6PRMNoxhyKxNnwVvWSL3qKTehyLjO-ksgAc6N2UFB--2a5oR6aj7DVgqhHAohWddpSDOQK_pIAQke3y8X0Aqfk8w15PgRuyrr2IDVMhi3VD1tMiEU2P7IaV8J6lLti8YtXoYPqjeShYap3geJmMfJjno0ZktXWS-6ERPPr_MY-7HUR2mQPV96Zq_VhjRjw1C8VroPZK48hYq2LcX6iHzpNfY4wGJJY2IDdgTBxbRWHTw7uFnQuzOoHh8cicfLSIoRWWl4TDeiLzVw.IWp7gNshc-J_yYlP.GkMshNEAlYWszcjrWJUS8hN04t4CXht2H5dL07u2ckh0Bso0fpdOLrQ76xZkEZzvjW4gNxtl5zFYNQiI4uM2wcpzyzo13Uh5QDvuhfP3SmHAbbIdk2CEEo_oLG4ZolGOs_yA0XJyYQ3k5PPm6qxJsFjMsKE8z2Poc2PW2zQ_Jl-YwthDteUgScgXQa344-LtiLMPb5UZP9QRyWdBDsBCqboF5WDg7SV6hadhf9eCk_5gttmWu-7pc7IaW0mII8PFbV6TggK7Gs_Dd3tr2eHtyvSguqZUn7m13V2Tc5oQBemhQ2W_6WAhPJstmrE09Qrg25z2FymZvMgo95VpsQ-qzxebDc7W-0iaMXNga4m6bijkURe3mfUI0ohotlL0geA0tMEyi6VEkPTvBk4PFgOA_-5h_SolwR0Gy57gUGlhguH4dZV_sjHJSQ3fDiTnytmtSQ447lsdttOkh9T3BHK9KOE2B75SeA8z7YxgpWVNhBBpUL8DxRtid8qUJ2enbNoV3MUh33jHzbBF2IwgUdtNHHMnJ4qZavwtRfm0aJPrwuoTqVejbpOJiiW-Gw_1OdaliBNvvB1MQedpgBqPhgKeuq_uh8vdd62U7aHHCTqRo-p8vuZ3afgUJ6JarW0qauG_W9By8PO4UP6GVR56056URY_i4vh8q6oZFrK3UQi2CdPWPJgHdbbYK-98eMlqJe35duWtaGVQgudGMLhavOEg4wpv4lO98iVjC9LRfXQ3DqRWuaXDRqprrhuVhr-R3EhbkVFjEZCKMExKQIDA0zWO6SoYUop-Md7oa1b8VvrNODn3AtqaSUvYfrubjSTYxVl6uxFPgdT2XSKaeM52pqrkGJsPyMbsO9qNNEOcVmTWRpdDTogPZraAa0Odxx9MsJohvVBoZqqKE_hc9Ohhr25Z_OPajwzec0xEc3gOLK_PAnqaHH3iWlyCr0fcPLBjgxqepQDaoOdtt2Nv9TCDJOCTAT5AjuaSbTMDEEbj2b61AQQFvqUPXWleb-Y0iCTrnFt8YlLIDOwFGDGMSUXj9mRhVpZTvXDvC9EIeH97kzgnGNilwxuXwGDiulxGbSBHI0RZLNDumtL-gWqvVqP2WfPjo9aSsI3gc7SitsdgCQ0m5rqV2TnJ22KH1tuFbcDNsan0fE8UYsF62gd1xwMm-9ilORqfb7yBy2kVXjSmLePqKnJq23uLANPdKEUf5_YUITxb8ZB7w_1XhXup4j1MZIcIsi76gHTwfgaUGFU73YKVRRFh9MJ2BhKZ23eq-JK2AL1PlOpAxX0wAkTuJQ-bOmi74d2aeC_1beoWGyVIUoe3cELriYo3Gd9H4fUnkO8.WIJod7tY18wNkwBresKu7Q"
+        },
+        {
+          "name": "CognitoIdentityServiceProvider.4gfjbfaa058if7qt6pqnr3q5qi.LastAuthUser",
+          "value": "fazeel@ncompass.inc"
+        },
+        {
+          "name": "amplify-signin-with-hostedUI",
+          "value": "false"
+        },
+        {
+          "name": "CognitoIdentityServiceProvider.4gfjbfaa058if7qt6pqnr3q5qi.fazeel@ncompass.inc.accessToken",
+          "value": "eyJraWQiOiJCMndUNHlZeElJaFEwTWxYbmM2blJibTJ0d2FBT3h2NlJIaHdIcDh1TStVPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI2N2FjMGYxOC0xODhmLTRlYmQtOWMwMC1kMjk1ZmI1MWI2MjkiLCJjb2duaXRvOmdyb3VwcyI6WyJCdXllciJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9KeU5SZDRxRWkiLCJjbGllbnRfaWQiOiI0Z2ZqYmZhYTA1OGlmN3F0NnBxbnIzcTVxaSIsIm9yaWdpbl9qdGkiOiI0NzRjYzJjYS0yY2E0LTQ3NWQtYjg4ZC03NDg3YjBiZGQzZDAiLCJldmVudF9pZCI6IjQ5YzI2ZDc2LWM1ZTktNDI5NS05MDY5LTM1OWQyYjdjNDBmZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3NjUwMzA0NjksImV4cCI6MTc2NTAzNDA2OSwiaWF0IjoxNzY1MDMwNDY5LCJqdGkiOiI1MDZkYjY1MC02MTFhLTQxYTQtYjhhOC05OTViNTExNzc1YjQiLCJ1c2VybmFtZSI6IjY3YWMwZjE4LTE4OGYtNGViZC05YzAwLWQyOTVmYjUxYjYyOSJ9.Bu3-JGnBpgyWuUXFuGZSG6Qh7p-VFe_u5KQRvZrBSTAQD6tuZn_PDciRidVraSx8yV196LYeKYwInWXAxi1qalvsuww9xAj1ailLn9jtKp1_xIeemqQCj2vDiokD0gIvjsLPxlpuYTzhJNy-ABP1cZu3kQ72hO2E9hXZ2RcLOE-4OzMTymwDusFxlcmklqK8u4Hsuu_qhcSDLZTt9_OTb0Zz-5MbKF1VLttRa2xuMtAQxF7BHvCsDUTzoMzkoXfc8w6jPegzuSKrG89lbUuOy4nC1LzfdA19arket-ZIRfB2YCapzWF644yetQtBgtsinpQdZvhJ6HF0OBMfMKkEkQ"
+        },
+        {
+          "name": "CognitoIdentityServiceProvider.4gfjbfaa058if7qt6pqnr3q5qi.fazeel@ncompass.inc.idToken",
+          "value": "eyJraWQiOiJETE5Qbmg0ZEhCN0hVZVwvb1R4NFJ4UFRXWkVFaEZsbld0ZkgxRkZMMUxQWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2N2FjMGYxOC0xODhmLTRlYmQtOWMwMC1kMjk1ZmI1MWI2MjkiLCJjb2duaXRvOmdyb3VwcyI6WyJCdXllciJdLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfSnlOUmQ0cUVpIiwiY29nbml0bzp1c2VybmFtZSI6IjY3YWMwZjE4LTE4OGYtNGViZC05YzAwLWQyOTVmYjUxYjYyOSIsImN1c3RvbTp0ZW5hbnRfaWQiOiJQWE5SRm9ydCIsIm9yaWdpbl9qdGkiOiI0NzRjYzJjYS0yY2E0LTQ3NWQtYjg4ZC03NDg3YjBiZGQzZDAiLCJhdWQiOiI0Z2ZqYmZhYTA1OGlmN3F0NnBxbnIzcTVxaSIsImV2ZW50X2lkIjoiNDljMjZkNzYtYzVlOS00Mjk1LTkwNjktMzU5ZDJiN2M0MGZmIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NjUwMzA0NjksIm5hbWUiOiJOXC9BIiwiZXhwIjoxNzY1MDM0MDY5LCJpYXQiOjE3NjUwMzA0NjksImZhbWlseV9uYW1lIjoiTlwvQSIsImp0aSI6IjE4ZWU4NWNkLWJlNTgtNDZkZi05YzM0LTVhZWM3YTMyM2QxOSIsImVtYWlsIjoiZmF6ZWVsQG5jb21wYXNzLmluYyJ9.HjxtnPYJNWLod8thngiRcFsBzVb0enaCLXbyykURsksHwNITZAXrDWD500jj1gQhlVklnZk9wYPMeKD-biqJaVdCSRMiC5Ub7fZWZ6eJxVNoqNaqODxEWIVe3w3lLJ1Z9AlDC8syv8GkWXPTXtHGLCNMIzC3quxenLxrzIqJUSpi5fD-aggfrag286qZsTIZlFRXj4uqPXm6tqZJyEDFJDfE05kf0x3FZRqvBgTQddj57iIBuUUziKMiYTajFUs00MLY47LeLUeG-4TvdIqbAryBMZY3LVxxPVTf3t6TfRbERf_sL35IVZ-XCNEqxQxCUlYaJAVwegFCyXQ0fBvGsg"
+        },
+        {
+          "name": "CognitoIdentityServiceProvider.4gfjbfaa058if7qt6pqnr3q5qi.fazeel@ncompass.inc.userData",
+          "value": "{\"UserAttributes\":[{\"Name\":\"sub\",\"Value\":\"67ac0f18-188f-4ebd-9c00-d295fb51b629\"},{\"Name\":\"email_verified\",\"Value\":\"true\"},{\"Name\":\"name\",\"Value\":\"N/A\"},{\"Name\":\"custom:tenant_id\",\"Value\":\"PXNRFort\"},{\"Name\":\"family_name\",\"Value\":\"N/A\"},{\"Name\":\"email\",\"Value\":\"fazeel@ncompass.inc\"}],\"Username\":\"67ac0f18-188f-4ebd-9c00-d295fb51b629\"}"
         }
       ]
     }
