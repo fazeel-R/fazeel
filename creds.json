@@ -1,6 +1,6 @@
 {
-    "adminUrl" : "https://pxnrfortadmin-test.powerofn.in/",
-    "buyerUrl": "https://pxnrfort-test.powerofn.in/",
+    "adminUrl" : "https://qapxnresellerautomationadmin-test.powerofn.in/",
+    "buyerUrl": "https://qapxnresellerautomation-test.powerofn.in/",
     "buyerCreds":{
         "userName" :"fazeel@ncompass.inc",
         "password" : "Admin123!"

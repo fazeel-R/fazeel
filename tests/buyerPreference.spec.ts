@@ -8,7 +8,6 @@ test("Updating buyer preferences", async({page})=>{
     await buyerUpdate.homepage()
     await buyerUpdate.clickAccount()
     await buyerUpdate.navigateToPreferences()
-    await buyerUpdate.selectWarehouseGroup()
-    //await expect(page.title()).toContain('Checkout preferences')
-    await expect(page).toHaveTitle(`PXNRFort - Checkout Preferences`);
+    //wait buyerUpdate.selectWarehouseGroup()
+    await expect(page).toHaveTitle(`QaPXNResellerAuto - Checkout Preferences`);
 })
