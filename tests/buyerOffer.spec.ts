@@ -5,7 +5,7 @@ const creds = require('../creds.json')
 
 test.use({ storageState: 'storageState/login.json' });
 
-test.only('Removing Items From cart', async ({ page }) => {
+test('Removing Items From cart', async ({ page }) => {
   const removeItemsFromCart = new BuyerCart(page);
 
   await removeItemsFromCart.homepage(`${creds.buyerUrl}/stock`);
