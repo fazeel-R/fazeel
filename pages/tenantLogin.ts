@@ -1,6 +1,6 @@
 import { wrapperMethod } from "../wrappermethods.ts/wrapper1"
 
-export class BuyerLogin extends wrapperMethod {
+export class TenantLogin extends wrapperMethod {
 
     async loadUrl(url: string) {
         await this.url(url)

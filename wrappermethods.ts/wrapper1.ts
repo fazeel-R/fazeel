@@ -25,5 +25,15 @@ async clickButton(locator:string){
 
 }
 
+async price(){
+    await this.page.locator(`[data-id="price"]`)
+    //data-id="price"
+}
+
+async purchaseQty(Qty:string)  {
+    await this.page.locator(`#purchaseQuantity`).fill(`Qty`)
+    
+}
+
 }
     

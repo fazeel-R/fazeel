@@ -1,5 +1,5 @@
 import { wrapperMethod } from '../wrappermethods.ts/wrapper1';
-const data = require('../creds.json')
+const data = require('../data.json')
 
 export class BuyerPreferences extends wrapperMethod {
     async homepage() {

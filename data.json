@@ -6,10 +6,20 @@
         "password" : "Admin123!"
     },
     "adminCreds":{
-        "userName" :"nate+admin@phonexinc.com",
+        "userName" :"pxautomation+reselleradmin@ncompass.inc",
         "password" : "Admin123!"
 
-    }
+    },
+
+    "adminApiData":{
+        "adminApiUrl": "https://cognito-idp.us-east-1.amazonaws.com",
+        "clientId": "6vr3u9g8om5qa2rf0pd58q7qho"
+
+    },
+
+    
+
+    "onHandWarehouseGroup": "[value='408']"
 
 
 }
