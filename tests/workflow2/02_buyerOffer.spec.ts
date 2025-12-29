@@ -8,6 +8,7 @@ test.describe.serial(`Place new offer`, ()=>{
     test(`Placing new offer`, async ({ page }) => {
         
         const newOffer = new buyerOffer(page)
+        await newOffer.acceptOffer()
         await newOffer.loadUrl(`${data.buyerUrl}stock`)
         await page.waitForTimeout(2000)
         await newOffer.selectWarehouse()

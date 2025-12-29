@@ -34,7 +34,7 @@ export async function loginAdminAndSaveToken() {
 
   const body = await response.json();
 
-  // 🔥 Persist token
+  // Persist token
   await writeApiJson('admin-auth.json', {
     idToken: body.AuthenticationResult.IdToken,
   });

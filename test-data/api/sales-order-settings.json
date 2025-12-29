@@ -1,0 +1,877 @@
+{
+  "fulfillmentSettings": {
+    "onReleaseFulfillmentStatusTo": "AWAITING_PAYMENT",
+    "onReleaseFulfillmentStatusOverrideRules": [],
+    "statuses": {
+      "ON_HOLD": {
+        "label": "On Hold",
+        "description": null,
+        "colorClass": "badge_1",
+        "displayOrder": 1
+      },
+      "PENDING": {
+        "label": "Pending",
+        "description": null,
+        "colorClass": "badge_4",
+        "displayOrder": 3
+      },
+      "SHIPPED": {
+        "label": "Shipped",
+        "description": null,
+        "colorClass": "badge_2",
+        "displayOrder": 10
+      },
+      "CANCELED": {
+        "label": "Canceled",
+        "description": null,
+        "colorClass": "error",
+        "displayOrder": 12
+      },
+      "SUBMITTED": {
+        "label": "Submitted",
+        "description": null,
+        "colorClass": "badge_1",
+        "displayOrder": 3
+      },
+      "PENDING_ON_HOLD": {
+        "label": "Pending - On Hold",
+        "description": null,
+        "colorClass": "badge_4",
+        "displayOrder": 3
+      },
+      "AWAITING_PAYMENT": {
+        "label": "Awaiting Payment",
+        "description": null,
+        "colorClass": "badge_1",
+        "displayOrder": 4
+      },
+      "READY_FOR_FULFILLMENT": {
+        "label": "Ready for Fulfillment",
+        "description": null,
+        "colorClass": "badge_3",
+        "displayOrder": 6
+      },
+      "AWAITING_SHIPPING_QUOTE": {
+        "label": "Awaiting Shipping Quote",
+        "description": null,
+        "colorClass": "badge_1",
+        "displayOrder": 2
+      }
+    },
+    "fulfillmentStatusMapping": {
+      "ON_HOLD": "ON_HOLD",
+      "SHIPPED": "SHIPPED",
+      "CANCELED": "CANCELED",
+      "AWAITING_PAYMENT": "AWAITING_PAYMENT",
+      "READY_FOR_FULFILLMENT": "READY_FOR_FULFILLMENT",
+      "AWAITING_SHIPPING_QUOTE": "AWAITING_SHIPPING_QUOTE"
+    },
+    "statusTransitionMapping": {
+      "AWAITING_PAYMENT": [
+        "READY_FOR_FULFILLMENT",
+        "SHIPPED",
+        "ON_HOLD"
+      ],
+      "READY_FOR_FULFILLMENT": [
+        "AWAITING_PAYMENT",
+        "SHIPPED",
+        "ON_HOLD"
+      ]
+    },
+    "blacklistedCombinedStatuses": {
+      "PAID": [
+        "ON_HOLD",
+        "AWAITING_SHIPPING_QUOTE",
+        "CANCELED"
+      ]
+    },
+    "singleButtonOrderFlow": false,
+    "deferRelaysUntilReleaseFulfillmentStatus": false,
+    "enableOnholdForManualSyncTenant": false,
+    "enableOnHoldOrder": true,
+    "splitAndMergeStatuses": [
+      "ON_HOLD",
+      "AWAITING_PAYMENT"
+    ],
+    "onReleaseFulfillmentStatuses": [
+      "AWAITING_PAYMENT"
+    ],
+    "paymentMethodOnReleaseFulfillmentStatusOverrideMapping": {}
+  },
+  "paymentSettings": {
+    "statuses": {
+      "PAID": {
+        "label": "Paid",
+        "description": null,
+        "colorClass": "badge_2",
+        "displayOrder": 2
+      },
+      "UNPAID": {
+        "label": "Unpaid",
+        "description": null,
+        "colorClass": "badge_1",
+        "displayOrder": 1
+      }
+    },
+    "paymentStatusMapping": {
+      "PAID": "PAID",
+      "UNPAID": "UNPAID"
+    },
+    "statusTransitionMapping": {
+      "PAID": [
+        "UNPAID"
+      ],
+      "UNPAID": [
+        "PAID"
+      ]
+    }
+  },
+  "itemStatusSettings": {
+    "statuses": {
+      "PENDING": {
+        "label": "Pending",
+        "description": "Waiting to be released to the supplier",
+        "colorClass": "badge_4",
+        "displayOrder": 1
+      },
+      "CANCELED": {
+        "label": "Canceled",
+        "description": "Order has been Canceled",
+        "colorClass": "badge_6",
+        "displayOrder": 8
+      },
+      "SUPPLIER": {
+        "label": "Supplier",
+        "description": "Order has been released to the supplier but the end-buyer order On Hold",
+        "colorClass": "badge_5",
+        "displayOrder": 3
+      },
+      "BACKORDERED": {
+        "label": "Backordered",
+        "description": "Some items on the order do not have enough availability",
+        "colorClass": "badge_5 phonex_theme_variant",
+        "displayOrder": 6
+      },
+      "TRANSFERRED": {
+        "label": "Transferred",
+        "description": "Order item allocation management has been transferred outside of PhoneX",
+        "colorClass": "badge_6",
+        "displayOrder": 7
+      },
+      "CAN_ALLOCATE": {
+        "label": "Can Allocate",
+        "description": "All items on order Can be Allocated, but then some items will not have enough availability for other orders",
+        "colorClass": "badge_1",
+        "displayOrder": 5
+      },
+      "PENDING_MAPPING": {
+        "label": "Pending - Mapping",
+        "description": "Items need mapping",
+        "colorClass": "badge_4",
+        "displayOrder": 2
+      },
+      "ALLOCATION_RESERVED": {
+        "label": "Allocated",
+        "description": "All items on the order are allocated",
+        "colorClass": "badge_2",
+        "displayOrder": 4
+      }
+    },
+    "backorderedFulfillmentStatuses": []
+  },
+  "groupStatusSettings": {
+    "statuses": {
+      "MERGED": {
+        "label": "Merged",
+        "description": "",
+        "colorClass": "muted",
+        "displayOrder": 4
+      },
+      "SUB_ORDER": {
+        "label": "Sub-Order",
+        "description": "",
+        "colorClass": "badge_4",
+        "displayOrder": 1
+      },
+      "CONSOLIDATED": {
+        "label": "Consolidated",
+        "description": "",
+        "colorClass": "badge_2",
+        "displayOrder": 3
+      },
+      "SHIPPING_ORDER": {
+        "label": "Shipping-Order",
+        "description": "",
+        "colorClass": "badge_4",
+        "displayOrder": 2
+      }
+    },
+    "consolidationStatuses": [
+      "READY_FOR_FULFILLMENT"
+    ]
+  },
+  "imeiListSettings": {
+    "imeiAdditionalFields": [
+      "Unlock_Code"
+    ],
+    "includeInvoiceNumber": false,
+    "includeRefOrderNumber": false
+  },
+  "orderExportSettings": {
+    "columns": [
+      {
+        "id": "phonexOrderNumber",
+        "type": null,
+        "label": "PhoneX Order #",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "manifest.invoiceNumbers",
+        "type": null,
+        "label": "Invoice #",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "manifest.trackingNumbers",
+        "type": null,
+        "label": "Tracking #",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "warehouse",
+        "type": null,
+        "label": "Warehouse Code",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "buyerNumber",
+        "type": null,
+        "label": "Customer Number",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "buyerName",
+        "type": null,
+        "label": "Customer Name",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "salesRepName",
+        "type": null,
+        "label": "Sales Rep",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "fulfillmentStatus",
+        "type": null,
+        "label": "PhoneX Fulfillment Status",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "refFulfillmentStatus",
+        "type": null,
+        "label": "Ref Fulfillment Status",
+        "included": true,
+        "editable": true
+      },
+      {
+        "id": "paymentStatus",
+        "type": null,
+        "label": "PhoneX Payment Status",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "refPaymentStatus",
+        "type": null,
+        "label": "Ref Payment Status",
+        "included": true,
+        "editable": true
+      },
+      {
+        "id": "createDate",
+        "type": null,
+        "label": "Created",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "updateDate",
+        "type": null,
+        "label": "Updated",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingAddress.address1",
+        "type": null,
+        "label": "Shipping Address 1",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingAddress.address2",
+        "type": null,
+        "label": "Shipping Address 2",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingAddress.city",
+        "type": null,
+        "label": "Shipping City",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingAddress.state",
+        "type": null,
+        "label": "Shipping State",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingAddress.zip",
+        "type": null,
+        "label": "Shipping Zip",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingAddress.country",
+        "type": null,
+        "label": "Shipping Country",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingAddress.fields.shippingZone",
+        "type": null,
+        "label": "Shipping Zone",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingOptionDetails.shippingOption.insured",
+        "type": null,
+        "label": "Shipping Insurance",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingOptionDetails.shippingOption.carrier",
+        "type": null,
+        "label": "Shipping Carrier",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingOptionDetails.shippingOption.carrierServiceLevel",
+        "type": null,
+        "label": "Shipping Service Level",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingOptionDetails.shippingOption.carrierShippingAccountNumber",
+        "type": null,
+        "label": "Shipping Account Number",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingOptionDetails.shippingOption.shippingInstructions",
+        "type": null,
+        "label": "Shipping Instructions",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "shippingOptionDetails.requestAQuoteDetails.serviceLevel",
+        "type": null,
+        "label": "Request a Quote Service Level",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "billingAddress.address1",
+        "type": null,
+        "label": "Billing Address 1",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "billingAddress.address2",
+        "type": null,
+        "label": "Billing Address 2",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "billingAddress.city",
+        "type": null,
+        "label": "Billing City",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "billingAddress.state",
+        "type": null,
+        "label": "Billing State",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "billingAddress.zip",
+        "type": null,
+        "label": "Billing Zip",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "billingAddress.country",
+        "type": null,
+        "label": "Billing Country",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "additionalServices",
+        "type": null,
+        "label": "Additional Services",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "freight",
+        "type": null,
+        "label": "Freight",
+        "included": true,
+        "editable": true
+      },
+      {
+        "id": "paymentFee",
+        "type": null,
+        "label": "Payment Fee",
+        "included": true,
+        "editable": true
+      },
+      {
+        "id": "tax",
+        "type": null,
+        "label": "Tax",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "additionalServicesFee",
+        "type": null,
+        "label": "Additional Services Fee",
+        "included": true,
+        "editable": true
+      },
+      {
+        "id": "total",
+        "type": null,
+        "label": "Total",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "items.itemNumber",
+        "type": null,
+        "label": "Item Number",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "items.itemDescription",
+        "type": null,
+        "label": "Description",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "items.orderedQuantity",
+        "type": null,
+        "label": "Ordered",
+        "included": true,
+        "editable": true
+      },
+      {
+        "id": "items.shippedQuantity",
+        "type": null,
+        "label": "Shipped",
+        "included": true,
+        "editable": true
+      },
+      {
+        "id": "items.canceledQuantity",
+        "type": null,
+        "label": "Canceled",
+        "included": true,
+        "editable": true
+      },
+      {
+        "id": "items.unitPrice",
+        "type": null,
+        "label": "Unit Price",
+        "included": true,
+        "editable": true
+      },
+      {
+        "id": "items.extendedPrice",
+        "type": null,
+        "label": "Ext Price",
+        "included": true,
+        "editable": false
+      }
+    ],
+    "orderExportLimit": 300
+  },
+  "buyerSalesOrderListPageSettings": {
+    "columns": [
+      {
+        "id": "createDate",
+        "type": "date",
+        "label": "Create Date",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "refOrderNumberOrPhonexOrderNumber",
+        "type": "id",
+        "label": "Order #",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "warehouse",
+        "type": null,
+        "label": "Warehouse",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "updateDate",
+        "type": "date",
+        "label": "Update Date",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "fulfillmentStatus",
+        "type": null,
+        "label": "Fulfillment Status",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "paymentStatus",
+        "type": null,
+        "label": "Payment Status",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "orderTotal",
+        "type": "currency",
+        "label": "Total",
+        "included": true,
+        "editable": false
+      }
+    ],
+    "fulfillmentStatusToInclude": [
+      "ON_HOLD",
+      "CANCELLED",
+      "AWAITING_SHIPPING_QUOTE",
+      "AWAITING_PAYMENT",
+      "READY_FOR_FULFILLMENT",
+      "CREDIT_CHECK",
+      "IN_PICKING",
+      "IN_SHIPPING",
+      "PARTIALLY_SHIPPED",
+      "SHIPPED"
+    ],
+    "enableSwitch": false,
+    "switchOffByDefault": false,
+    "query": null
+  },
+  "tenantSalesOrderListPageSettings": {
+    "columns": [
+      {
+        "id": "phonexOrderNumber",
+        "type": "id",
+        "label": "PhoneX Order #",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "pxnsOrderNumber",
+        "type": null,
+        "label": "Supplier Order #",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "pxnsParticipantName",
+        "type": null,
+        "label": "PXC Supplier",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "createDate",
+        "type": "date",
+        "label": "Created",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "updateDate",
+        "type": "date",
+        "label": "Updated",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "warehouseCode",
+        "type": null,
+        "label": "Warehouse Code",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "salesRepName",
+        "type": null,
+        "label": "Sales Rep",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "buyerId",
+        "type": null,
+        "label": "Customer",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "orderTotal",
+        "type": "currency",
+        "label": "Total",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "margin",
+        "type": "currency",
+        "label": "Margin",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "marginPercent",
+        "type": "percent",
+        "label": "Margin %",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "groupStatus",
+        "type": null,
+        "label": "Consolidation Status",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "itemStatus",
+        "type": null,
+        "label": "Item Status",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "fulfillmentStatus",
+        "type": null,
+        "label": "Fulfillment Status",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "daysInStatus",
+        "type": "integer",
+        "label": "Days in Status",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "paymentStatus",
+        "type": null,
+        "label": "Payment Status",
+        "included": true,
+        "editable": false
+      },
+      {
+        "id": "daysUnpaid",
+        "type": "integer",
+        "label": "Days in Unpaid",
+        "included": true,
+        "editable": false
+      }
+    ],
+    "fulfillmentStatusToInclude": [
+      "ON_HOLD",
+      "CANCELED",
+      "AWAITING_SHIPPING_QUOTE",
+      "AWAITING_PAYMENT",
+      "READY_FOR_FULFILLMENT",
+      "SHIPPED"
+    ],
+    "enableSwitch": false,
+    "switchOffByDefault": false,
+    "query": null
+  },
+  "invoiceSettings": {
+    "invoiceAddress": null,
+    "notes": {
+      "note2": "<div><br>All Sales are subject to the Terms and Conditions of Purchase in effect on the date of the transaction. </div>"
+    },
+    "warehouseNotes": {},
+    "includeWarehouseNotes": {},
+    "footerText": "Customer footer line 1\nCustomer footer line 2",
+    "includeFooterText": true,
+    "customFields": {},
+    "includeTaxNote": true,
+    "includePaymentInstructions": true,
+    "showInvoiceFulfillmentStatuses": [
+      "PARTIALLY_SHIPPED",
+      "SHIPPED",
+      "INVOICED"
+    ],
+    "showPackingSlipFulfillmentStatuses": [],
+    "customShippingMethodFormatters": {}
+  },
+  "buyerPermissions": {
+    "beforeRelease": [
+      "canUpdateShipping",
+      "canUpdateBillingAndPayment",
+      "canUpdateAdditionalServices",
+      "canIncreaseOrderedQuantity",
+      "canDecreaseOrderedQuantity",
+      "canRemoveOrderLineItem",
+      "canCancelOrder"
+    ],
+    "afterRelease": []
+  },
+  "tenantPermissions": {
+    "beforeRelease": [
+      "canUpdateFees",
+      "canCancelOrder",
+      "canReleaseOrder",
+      "canUpdatePaymentStatus",
+      "canUpdateShipping",
+      "canUpdateBillingAndPayment",
+      "canUpdateAdditionalServices",
+      "canAddOrderLineItem",
+      "canEditOrderLineItem",
+      "canRemoveOrderLineItem",
+      "canImportOrderLineItem",
+      "canOverrideQuantityForOrderLineItem",
+      "canTransferItemsToNewBuyer",
+      "canUpdateSalesOrderDocument"
+    ],
+    "afterRelease": [
+      "canConsolidateShipping",
+      "canGenerateInvoice",
+      "canUpdateFees",
+      "canCancelOrder",
+      "canUpdateFulfillmentStatus",
+      "canUpdatePaymentStatus",
+      "canUpdateShipping",
+      "canUpdateBillingAndPayment",
+      "canUpdateAdditionalServices",
+      "canAddOrderLineItem",
+      "canEditOrderLineItem",
+      "canRemoveOrderLineItem",
+      "canUpdateSalesOrderDocument"
+    ]
+  },
+  "salesOrderUpdateMethod": "ALL_VIA_PHONEX",
+  "paymentCollectionSettings": {
+    "featureEnabled": false,
+    "gracePeriodEnabled": false,
+    "autoCancelEnabled": false,
+    "paymentGracePeriodHrs": null,
+    "notifiy1BeforeGracePeriodEnabled": false,
+    "notifiy1BeforeGracePeriodHrs": null,
+    "notifiy2BeforeGracePeriodEnabled": false,
+    "notifiy2BeforeGracePeriodHrs": null,
+    "notifiy3BeforeGracePeriodEnabled": false,
+    "notifiy3BeforeGracePeriodHrs": null,
+    "reservationFeeEnabled": false,
+    "reservationFeePercentage": null,
+    "cancellationFeeEnabled": false,
+    "cancellationFeePercentage": null,
+    "paymentTimeExtensionCustomText": null,
+    "maxPaymentExtensionDaysWithFee": 14,
+    "reservationAndCancellationFeeEndingStatuses": null
+  },
+  "orderNumberSettings": {
+    "prefixByChannel": null,
+    "generateSequentialOrderNumber": false,
+    "sequenceKeyByChannel": null,
+    "fixedNumberDigitsCount": null,
+    "startingNumberFloor": 0,
+    "incrementBy": 1,
+    "stocklistOrderNumberPrefix": "PXSTKL",
+    "auctionOrderNumberPrefix": "PXAUC",
+    "stocklistOrderSequenceKey": "STOCKLIST",
+    "auctionOrderSequenceKey": "AUCTION"
+  },
+  "orderActionDirectives": {
+    "snapshotFields": [
+      {
+        "sourceEntity": "Inventory",
+        "targetEntity": "SalesOrderLineItem",
+        "attributes": [
+          "xHSCode",
+          "xCountryOfOrigin"
+        ]
+      }
+    ],
+    "orderPublishTriggers": [
+      "fulfillmentStatusUpdate",
+      "lineItemsUpdate"
+    ],
+    "consolidatePxnOrders": false,
+    "maxRelayRetryCount": null,
+    "inventoryToLineItemSnapshotAttributes": [
+      "xCountryOfOrigin",
+      "xHSCode"
+    ]
+  },
+  "documentSettings": {
+    "onWorkflowDocumentUploadFulfillmentStatusTo": null,
+    "workflowDocumentDeleteFulfillmentStatus": null,
+    "workflowDocumentName": null,
+    "workflowDocumentRequiredTitle": null,
+    "workflowDocumentRequiredDescription": null,
+    "workflowDocumentProvidedTitle": null,
+    "workflowDocumentProvidedDescription": null,
+    "workflowDocumentTemplateDownloadButtonLabel": null,
+    "workflowDocumentDownloadButtonLabel": null,
+    "workflowDocumentUploadButtonLabel": null,
+    "workflowDocumentRemoveButtonLabel": null
+  },
+  "additionalFields": {
+    "fields": []
+  }
+}

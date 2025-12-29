@@ -1,0 +1,485 @@
+{
+  "407": {
+    "category": [
+      "Phones",
+      "Tablets",
+      "HeadPhones"
+    ],
+    "categoryLabels": {
+      "Phones": "Phones",
+      "Tablets": "Tablets",
+      "HeadPhones": "HeadPhones"
+    },
+    "grade": [
+      "A",
+      "B",
+      "TestCode-1wj",
+      "PGL"
+    ],
+    "gradeLabels": {
+      "A": "A",
+      "B": "B",
+      "TestCode-1wj": "Test label -  tvuww",
+      "PGL": "PGL"
+    },
+    "warehouse": [
+      19
+    ],
+    "warehouseLabels": {
+      "19": "Supplier Warehouse"
+    },
+    "attributeLabels": {
+      "carrier": "Carrier",
+      "lock_status": "Lock Status",
+      "color": "Color",
+      "grade": "Grade",
+      "item_number": "Item Number",
+      "model": "Model",
+      "modelNumber": "Model Number",
+      "category": "Category",
+      "warehouse": "Warehouse",
+      "capacity": "Capacity",
+      "manufacturer": "Manufacturer"
+    },
+    "attributeSortAlgorithm": {
+      "carrier": "Default",
+      "lock_status": "Default",
+      "color": "Default",
+      "grade": "FilterOrder",
+      "optionalFieldsSortOrder": "manufacturer,model,modelNumber,capacity,color,carrier,lock_status,grade",
+      "item_number": "Default",
+      "model": "Default",
+      "modelNumber": "Default",
+      "category": "Default",
+      "warehouse": "Default",
+      "capacity": "AlphanumericAsNumeric",
+      "manufacturer": "Default"
+    },
+    "itemDescriptionRules": {
+      "itemDescriptionDelimiter": " / ",
+      "itemNumberDescriptionPrefix": "SKU# (",
+      "itemNumberDescriptionSuffix": ")",
+      "includeEmptyAttributeValue": false
+    },
+    "topSearchLevelForAllTenants": [
+      "category"
+    ],
+    "doNotDisplayGrades": null,
+    "doNotDisplayCategories": null,
+    "searchLevels": {
+      "Phones": [
+        [
+          "grade",
+          "manufacturer"
+        ],
+        [
+          "model",
+          "capacity"
+        ],
+        [
+          "color"
+        ]
+      ],
+      "Tablets": [
+        [
+          "grade",
+          "manufacturer"
+        ],
+        [
+          "model",
+          "capacity"
+        ],
+        [
+          "color"
+        ]
+      ],
+      "HeadPhones": [
+        [
+          "grade",
+          "manufacturer"
+        ],
+        [
+          "model"
+        ],
+        []
+      ]
+    },
+    "searchMultipleSelect": {
+      "color": true,
+      "grade": true,
+      "model": true,
+      "carrier": true,
+      "capacity": true,
+      "category": false,
+      "lock_status": true,
+      "modelNumber": true,
+      "manufacturer": true
+    },
+    "searchEmptyValues": null,
+    "searchHideSingleValueSelect": null,
+    "groupAttributes": {
+      "Phones": [
+        "manufacturer",
+        "model",
+        "capacity",
+        "grade",
+        "warehouse"
+      ],
+      "Tablets": [
+        "manufacturer",
+        "model",
+        "capacity",
+        "grade",
+        "warehouse"
+      ],
+      "HeadPhones": [
+        "manufacturer",
+        "model",
+        "grade",
+        "warehouse"
+      ]
+    },
+    "groupDescription": {
+      "Phones": [
+        "manufacturer",
+        "model",
+        "capacity"
+      ],
+      "Tablets": [
+        "manufacturer",
+        "model",
+        "capacity"
+      ],
+      "HeadPhones": [
+        "manufacturer",
+        "model"
+      ]
+    },
+    "groupTopRightAttribute": {
+      "Phones": "grade",
+      "Tablets": "grade",
+      "HeadPhones": "grade"
+    },
+    "groupBottomRightAttribute": {
+      "Phones": "warehouse",
+      "Tablets": "warehouse",
+      "HeadPhones": "warehouse"
+    },
+    "groupDescriptionDelimiter": " ",
+    "groupItemDescriptionDelimiter": " ",
+    "groupItemDescription": {
+      "Phones": [
+        "modelNumber",
+        "color",
+        "carrier",
+        "lock_status"
+      ],
+      "Tablets": [
+        "modelNumber",
+        "color"
+      ],
+      "HeadPhones": []
+    },
+    "maxItemQuantityToBeDisplayed": 300,
+    "defaultAlertQuantity": null,
+    "gradeFilterGroups": null,
+    "showGradeIcon": true,
+    "gradeLabelDescriptions": null,
+    "warehouseAcceptingOffer": [
+      19
+    ],
+    "warehouseMinOrderQuantity": {
+      "19": null
+    },
+    "sortOrder": [
+      "manufacturer",
+      "model",
+      "capacity",
+      "grade"
+    ],
+    "stocklistSortOrder": [
+      "manufacturer",
+      "model",
+      "capacity",
+      "grade"
+    ],
+    "isOfferInsightsEnabled": false,
+    "categorySaleOption": null,
+    "hideListPriceForOfferSale": false,
+    "acceptOffer": true,
+    "checkoutSettings": null,
+    "cartSettings": null,
+    "displayPxnsItemNumber": true
+  },
+  "408": {
+    "category": [
+      "Phones",
+      "Tablets"
+    ],
+    "categoryLabels": {
+      "Phones": "Phones",
+      "Tablets": "Tablets"
+    },
+    "grade": [
+      "A",
+      "B",
+      "C",
+      "TestCode-1wj",
+      "PGL"
+    ],
+    "gradeLabels": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "PGL": "PGL",
+      "TestCode-1wj": "Test label -  tvuww"
+    },
+    "warehouse": [
+      "INSTOCK",
+      "MA",
+      "AM"
+    ],
+    "warehouseLabels": {
+      "MA": "Miami",
+      "INSTOCK": "In Stock",
+      "AM": "Amsterdam"
+    },
+    "attributeLabels": {
+      "carrier": "Carrier",
+      "lock_status": "Lock Status",
+      "color": "Color",
+      "grade": "Grade",
+      "item_number": "Item Number",
+      "weight": "weight",
+      "model": "Model",
+      "modelNumber": "Model Number",
+      "category": "Category",
+      "warehouse": "Warehouse",
+      "capacity": "Capacity",
+      "manufacturer": "Manufacturer"
+    },
+    "attributeSortAlgorithm": {
+      "lock_status": "Default",
+      "color": "Default",
+      "optionalFieldsSortOrder": "modelNumber,capacity,color,carrier,lock_status,weight",
+      "item_number": "Default",
+      "weight": "AlphanumericAsNumeric",
+      "warehouse": "Default",
+      "capacity": "AlphanumericAsNumeric",
+      "manufacturer": "Default",
+      "carrier": "Default",
+      "grade": "Default",
+      "model": "Default",
+      "modelNumber": "Default",
+      "category": "Default"
+    },
+    "itemDescriptionRules": {
+      "itemDescriptionDelimiter": " / ",
+      "itemNumberDescriptionPrefix": "SKU# (",
+      "itemNumberDescriptionSuffix": ")",
+      "includeEmptyAttributeValue": false
+    },
+    "topSearchLevelForAllTenants": [
+      "category"
+    ],
+    "doNotDisplayGrades": null,
+    "doNotDisplayCategories": null,
+    "searchLevels": {
+      "Phones": [
+        [
+          "grade",
+          "manufacturer"
+        ],
+        [
+          "model",
+          "capacity"
+        ],
+        [
+          "color"
+        ]
+      ],
+      "Tablets": [
+        [
+          "grade",
+          "manufacturer"
+        ],
+        [
+          "model",
+          "capacity"
+        ],
+        [
+          "color"
+        ]
+      ]
+    },
+    "searchMultipleSelect": {
+      "color": true,
+      "grade": true,
+      "model": true,
+      "weight": true,
+      "carrier": true,
+      "capacity": true,
+      "category": false,
+      "lock_status": true,
+      "modelNumber": true,
+      "manufacturer": true
+    },
+    "searchEmptyValues": null,
+    "searchHideSingleValueSelect": null,
+    "groupAttributes": {
+      "Phones": [
+        "manufacturer",
+        "model",
+        "capacity",
+        "grade",
+        "weight",
+        "warehouse"
+      ],
+      "Tablets": [
+        "manufacturer",
+        "model",
+        "capacity",
+        "grade",
+        "weight",
+        "warehouse"
+      ]
+    },
+    "groupDescription": {
+      "Phones": [
+        "manufacturer",
+        "model",
+        "capacity",
+        "weight"
+      ],
+      "Tablets": [
+        "manufacturer",
+        "model",
+        "capacity",
+        "weight"
+      ]
+    },
+    "groupTopRightAttribute": {
+      "Phones": "grade",
+      "Tablets": "grade"
+    },
+    "groupBottomRightAttribute": {
+      "Phones": "warehouse",
+      "Tablets": "warehouse"
+    },
+    "groupDescriptionDelimiter": " ",
+    "groupItemDescriptionDelimiter": " ",
+    "groupItemDescription": {
+      "Phones": [
+        "modelNumber",
+        "color",
+        "carrier",
+        "lock_status"
+      ],
+      "Tablets": [
+        "modelNumber",
+        "color"
+      ]
+    },
+    "maxItemQuantityToBeDisplayed": 300,
+    "defaultAlertQuantity": null,
+    "gradeFilterGroups": [
+      {
+        "grades": [
+          "A",
+          "B",
+          "C",
+          "TestCode-1wj"
+        ],
+        "header": "Functional",
+        "footer": null
+      },
+      {
+        "grades": [
+          "PGL"
+        ],
+        "header": "Non Functional",
+        "footer": null
+      }
+    ],
+    "showGradeIcon": true,
+    "gradeLabelDescriptions": [
+      {
+        "grade": "A",
+        "gradeLabel": "A",
+        "gradeDescription": "<div>A Greade Description</div>",
+        "gradeSection": "Functional",
+        "gradeComparison": {
+          "description": "<div><strong>Compared to [ target grading scale ] Grading</strong></div><div><br></div><div>Expect the [ current grade ] grade to yield a mix of [ target grading scale ] grades the following way:</div>",
+          "gradeMixChartEnabled": false,
+          "gradeMixChart": [
+            {
+              "label": "A",
+              "value": 53
+            },
+            {
+              "label": "B-1",
+              "value": 17
+            },
+            {
+              "label": "C-1",
+              "value": 30
+            }
+          ]
+        }
+      },
+      {
+        "grade": "B",
+        "gradeLabel": "B",
+        "gradeDescription": "",
+        "gradeSection": "Functional",
+        "gradeComparison": null
+      },
+      {
+        "grade": "C",
+        "gradeLabel": "C",
+        "gradeDescription": "",
+        "gradeSection": "Functional",
+        "gradeComparison": null
+      },
+      {
+        "grade": "PGL",
+        "gradeLabel": "PGL",
+        "gradeDescription": "",
+        "gradeSection": "Non Functional",
+        "gradeComparison": null
+      },
+      {
+        "grade": "TestCode-1wj",
+        "gradeLabel": "Test label -  tvuww",
+        "gradeDescription": "Test Description - 8ezqm",
+        "gradeSection": "Functional",
+        "gradeComparison": null
+      }
+    ],
+    "warehouseAcceptingOffer": [],
+    "warehouseMinOrderQuantity": {
+      "MA": null,
+      "INSTOCK": null,
+      "AM": null
+    },
+    "sortOrder": [
+      "manufacturer",
+      "model",
+      "capacity",
+      "grade"
+    ],
+    "stocklistSortOrder": [
+      "manufacturer",
+      "model",
+      "capacity",
+      "grade"
+    ],
+    "isOfferInsightsEnabled": false,
+    "categorySaleOption": null,
+    "hideListPriceForOfferSale": false,
+    "acceptOffer": false,
+    "checkoutSettings": null,
+    "cartSettings": null,
+    "displayPxnsItemNumber": false
+  }
+}

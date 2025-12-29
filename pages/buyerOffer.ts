@@ -1,6 +1,8 @@
 import { wrapperMethod } from "../wrappermethods.ts/wrapper1";
 import { expect } from "@playwright/test";
 const data = require('../data.json')
+const offerPermission = require('../test-data/api/stocklist-settings.json')
+
 
 export class buyerOffer extends wrapperMethod{
 
@@ -21,8 +23,14 @@ export class buyerOffer extends wrapperMethod{
         
         //await this.clickButton(`[data-id="INSTOCK"]`)
     }
+    async acceptOffer() {
+        const acceptOffer = offerPermission['408'].acceptOffer
+        expect(acceptOffer).toBe(true)
+        
+    }
 
     async placeAnOffer(){
+
         
         const buyOffer = this.page.locator(`.px-open-stock-list-group`)
         const count =await buyOffer.count()

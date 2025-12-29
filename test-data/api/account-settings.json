@@ -1,0 +1,494 @@
+{
+  "tenantId": "QaPXNResellerAuto",
+  "autogenerateBuyerNumber": true,
+  "autogenerateAddressCode": true,
+  "additionalAssignedChannels": [],
+  "accountRules": {
+    "fieldRules": null
+  },
+  "customerSettings": {
+    "canAddCustomer": true,
+    "canEditCustomer": true,
+    "canActivateDeactivateCustomer": true,
+    "canActivateDeactivateProspect": true,
+    "showMyCustomers": true,
+    "canCreateOrderForCustomer": true,
+    "canCreateRMAForCustomer": false,
+    "displayShoppingChannels": true,
+    "editShoppingChannels": true,
+    "displayPaymentMethods": true,
+    "canEditPaymentMethods": true,
+    "canEditShippingMethods": true,
+    "showDocumentsManager": true,
+    "canAddAddress": true,
+    "canEditAddress": true,
+    "canDeleteAddress": true,
+    "canAddUser": true,
+    "canEditUser": true,
+    "canActivateDeactivateUser": true,
+    "canResetUserPassword": true,
+    "canImportCustomer": true,
+    "canImportCustomerAddress": true,
+    "canImportUser": true,
+    "canExportCustomer": true,
+    "canExportCustomerAddress": true,
+    "canExportUser": true,
+    "canManageReservationAndCancellation": false,
+    "canManageCustomerTags": true,
+    "customerEditableFieldLimits": [
+      "buyerName",
+      "email",
+      "phone",
+      "whatsApp",
+      "state",
+      "country",
+      "salesRepId",
+      "additionalFields"
+    ],
+    "canEditProspect": true,
+    "canEditProspectAddress": true,
+    "canAddProspectAddress": true,
+    "canDeleteProspectAddress": true,
+    "canMarkShippingAddressAsFreightForwarder": false
+  },
+  "customerListSetttings": {
+    "columns": [
+      {
+        "id": "buyerName",
+        "label": "Customer Name",
+        "included": true
+      },
+      {
+        "id": "id",
+        "label": "PhoneX Customer #",
+        "included": true
+      },
+      {
+        "id": "buyerType",
+        "label": "Customer Type",
+        "included": true
+      },
+      {
+        "id": "registrationStatus",
+        "label": "Checkout Status",
+        "included": true
+      },
+      {
+        "id": "documentStatus",
+        "label": "Document Status",
+        "included": true
+      },
+      {
+        "id": "salesRepName",
+        "label": "Sales Rep",
+        "included": true
+      },
+      {
+        "id": "state",
+        "label": "State/Prov",
+        "included": true
+      },
+      {
+        "id": "country",
+        "label": "Country",
+        "included": true
+      },
+      {
+        "id": "totalActiveUsers",
+        "label": "Users",
+        "included": true
+      },
+      {
+        "id": "notesCount",
+        "label": "Notes",
+        "included": true
+      },
+      {
+        "id": "enabledTags",
+        "label": "Tags",
+        "included": true
+      },
+      {
+        "id": "lastActiveDate",
+        "label": "Last Active",
+        "included": true
+      },
+      {
+        "id": "lastOrderDate",
+        "label": "Last Order",
+        "included": true
+      },
+      {
+        "id": "createDate",
+        "label": "Created",
+        "included": true
+      },
+      {
+        "id": "updateDate",
+        "label": "Updated",
+        "included": true
+      },
+      {
+        "id": "active",
+        "label": "Active",
+        "included": true
+      }
+    ],
+    "longUnusedAccountsSwitch": null,
+    "limitAccessByAppContext": false
+  },
+  "customerImportSettings": null,
+  "customerPaymentMethods": {
+    "paymentMethods": [
+      {
+        "id": "ACH",
+        "label": "ACH",
+        "fields": []
+      },
+      {
+        "id": "COD",
+        "label": "COD",
+        "fields": []
+      },
+      {
+        "id": "WIRE",
+        "label": "Wire Transfer",
+        "fields": []
+      },
+      {
+        "id": "PAYPAL",
+        "label": "PayPal",
+        "fields": []
+      },
+      {
+        "id": "CREDITCARD",
+        "label": "Credit Card",
+        "fields": []
+      }
+    ]
+  },
+  "customerShippingMethods": {
+    "shippingMethods": [
+      {
+        "code": "REQUEST_A_QUOTE",
+        "label": "Request a Quote",
+        "fields": []
+      },
+      {
+        "code": "BILL_MY_ACCOUNT",
+        "label": "Bill My Account",
+        "fields": []
+      },
+      {
+        "code": "CARRIER_PICKUP",
+        "label": "Carrier Pickup",
+        "fields": []
+      },
+      {
+        "code": "CUSTOMER_LABEL",
+        "label": "Customer provides shipping label",
+        "fields": []
+      },
+      {
+        "code": "CUSTOMER_PICKUP",
+        "label": "Customer Pickup",
+        "fields": []
+      },
+      {
+        "code": "CUSTOM_1",
+        "label": "custom 1",
+        "fields": []
+      },
+      {
+        "code": "UPS_GROUND",
+        "label": "UPS_GROUND",
+        "fields": []
+      },
+      {
+        "code": "FEDEX_GROUND",
+        "label": "Fedex Ground",
+        "fields": []
+      },
+      {
+        "code": "UPS_2_DAY_AIR",
+        "label": "UPS 2 Day Air",
+        "fields": []
+      },
+      {
+        "code": "UPS_NEXT_DAY_AIR",
+        "label": "UPS Next Day Air",
+        "fields": []
+      },
+      {
+        "code": "PRIORITY_OVERNIGHT",
+        "label": "Fedex Priority Overnight",
+        "fields": []
+      },
+      {
+        "code": "FEDEX_EXPRESS_SAVER",
+        "label": "Fedex Express Saver",
+        "fields": []
+      },
+      {
+        "code": "UPS_WORLDWIDE_SAVER",
+        "label": "UPS Worldwide Saver",
+        "fields": []
+      },
+      {
+        "code": "INTERNATIONAL_ECONOMY",
+        "label": "FedEx International Economy",
+        "fields": []
+      },
+      {
+        "code": "INTERNATIONAL_EXPRESS",
+        "label": "FedEx International Priority",
+        "fields": []
+      },
+      {
+        "code": "UPS_WORLDWIDE_EXPRESS",
+        "label": "UPS Worldwide Express",
+        "fields": []
+      },
+      {
+        "code": "INTERNATIONAL_CONNECT_PLUS",
+        "label": "FedEx International Connect Plus",
+        "fields": []
+      }
+    ]
+  },
+  "customerDefaultAdditionalAssignedChannels": [],
+  "customerDefaultPaymentMethods": [
+    "ACH",
+    "WIRE"
+  ],
+  "customerDefaultShippingMethods": [
+    "REQUEST_A_QUOTE",
+    "BILL_MY_ACCOUNT",
+    "CARRIER_PICKUP"
+  ],
+  "customerAdditionalFields": {
+    "fields": [
+      {
+        "id": "lastOrderDate",
+        "label": "Last Order Date",
+        "type": "display",
+        "options": [],
+        "required": false,
+        "encrypted": false,
+        "maxLength": 100,
+        "value": "",
+        "optionRef": null,
+        "validations": [],
+        "conditionalRequired": false,
+        "dependsOn": null,
+        "dependentFields": null,
+        "conditions": null,
+        "requiredAtCustomerConversion": false
+      }
+    ]
+  },
+  "customerAddressAdditionalFields": {
+    "fields": [],
+    "countryCodeMappingTable": "country_iso2_mapping",
+    "stateCodeMappingTable": "state_iso2_mapping"
+  },
+  "userAdditionalFields": null,
+  "configurationSettings": {
+    "featureBringYourOwnSupplierEnabled": true,
+    "featureOfflineCustomersEnabled": false,
+    "featureViewOnlyCustomersEnabled": false,
+    "featureCanCheckoutWithoutDocsEnabled": false,
+    "featureCanManageSalesOrderDocument": false,
+    "featureDownloadCustomerDocumentsBundleEnabled": false,
+    "systemLoginAdminUserId": "pxautomation+reselleradmin@ncompass.inc",
+    "tenantBusinessTimezone": "America/New_York",
+    "bccBatchSize": 30,
+    "ccBatchSize": 0,
+    "apiSettings": {
+      "buyerList": {
+        "asyncMode": false,
+        "version": null,
+        "maxBatchSize": null,
+        "timeout": null
+      },
+      "exportBuyers": {
+        "asyncMode": false,
+        "version": null,
+        "maxBatchSize": null,
+        "timeout": null
+      },
+      "exportProspects": {
+        "asyncMode": false,
+        "version": null,
+        "maxBatchSize": null,
+        "timeout": null
+      },
+      "exportBuyerUsers": {
+        "asyncMode": false,
+        "version": null,
+        "maxBatchSize": null,
+        "timeout": null
+      },
+      "buyerTagsBulkUpdate": {
+        "asyncMode": false,
+        "version": null,
+        "maxBatchSize": 100,
+        "timeout": null
+      },
+      "exportProspectUsers": {
+        "asyncMode": false,
+        "version": null,
+        "maxBatchSize": null,
+        "timeout": null
+      },
+      "adminDocumentDetails": {
+        "asyncMode": false,
+        "version": "V2",
+        "maxBatchSize": null,
+        "timeout": null
+      },
+      "buyerDocumentDetails": {
+        "asyncMode": false,
+        "version": "V2",
+        "maxBatchSize": null,
+        "timeout": null
+      },
+      "exportBuyerAddresses": {
+        "asyncMode": false,
+        "version": null,
+        "maxBatchSize": null,
+        "timeout": null
+      },
+      "exportItemAttributes": {
+        "asyncMode": false,
+        "version": null,
+        "maxBatchSize": null,
+        "timeout": null
+      },
+      "documentLocationOptions": {
+        "asyncMode": false,
+        "version": "V2",
+        "maxBatchSize": null,
+        "timeout": null
+      },
+      "buyerAttributesBulkUpdate": {
+        "asyncMode": false,
+        "version": null,
+        "maxBatchSize": 100,
+        "timeout": null
+      },
+      "prospectsInviteBulkResend": {
+        "asyncMode": true,
+        "version": null,
+        "maxBatchSize": null,
+        "timeout": null
+      },
+      "acceptSalesOrderUpdateFile": {
+        "asyncMode": false,
+        "version": null,
+        "maxBatchSize": null,
+        "timeout": null
+      },
+      "acceptImportInventoryAttributeFile": {
+        "asyncMode": false,
+        "version": null,
+        "maxBatchSize": null,
+        "timeout": null
+      }
+    }
+  },
+  "currencySettings": null,
+  "displaySettings": {
+    "customLayouts": null,
+    "customDatePatterns": null
+  },
+  "buyerStatusCodeSettings": {
+    "accessDeniedStatusCodes": [
+      "EXPIRED_VERIFIED_PROSPECT"
+    ],
+    "expiringStatusCodes": [
+      "VERIFIED_PROSPECT",
+      "VERIFIED_PROSPECT_IN_GRACE_PERIOD"
+    ],
+    "expirationInDays": 30,
+    "prospectGracePeriodInDays": 0,
+    "statusCodeBuyerTypeMapping": {
+      "GENERIC_CUSTOMER": "Customer",
+      "VERIFIED_PROSPECT": "Verified Prospect",
+      "UNVERIFIED_PROSPECT": "Prospect",
+      "EXPIRED_VERIFIED_PROSPECT": "Expired Prospect",
+      "VERIFIED_PROSPECT_IN_GRACE_PERIOD": "Prospect - Review Pending"
+    },
+    "statusCodeRegistrationStatusMapping": {
+      "GENERIC_CUSTOMER": "Complete",
+      "VERIFIED_PROSPECT": "Incomplete",
+      "UNVERIFIED_PROSPECT": "Incomplete",
+      "EXPIRED_VERIFIED_PROSPECT": "Incomplete",
+      "VERIFIED_PROSPECT_IN_GRACE_PERIOD": "Incomplete"
+    },
+    "pxnsBuyerStatuses": {
+      "INVITED": {
+        "label": "Invited",
+        "description": null,
+        "colorClass": "phonex_theme_variant px_background_badge_1",
+        "displayOrder": 1
+      },
+      "ACCEPTED": {
+        "label": "Accepted",
+        "description": null,
+        "colorClass": "px_background_badge_1",
+        "displayOrder": 2
+      },
+      "RESELLER": {
+        "label": "Reseller",
+        "description": null,
+        "colorClass": "px_background_badge_2",
+        "displayOrder": 3
+      },
+      "PENDING_APPROVAL": {
+        "label": "Pending Approval",
+        "description": null,
+        "colorClass": "px_background_badge_4",
+        "displayOrder": 4
+      }
+    },
+    "stocklist_access_in_days": 7
+  },
+  "customerUpdateMethod": null,
+  "accountBalanceSettings": {
+    "columns": [],
+    "documentTypeMappings": null,
+    "syncMethod": null,
+    "syncSource": null,
+    "syncBatchSize": null,
+    "canImportAccountBalance": false
+  },
+  "defaultCurrencyCode": "DEFAULT",
+  "paymentMethodCodes": [
+    "ACH",
+    "COD",
+    "WIRE",
+    "PAYPAL",
+    "CREDITCARD"
+  ],
+  "shippingMethodCodes": [
+    "REQUEST_A_QUOTE",
+    "BILL_MY_ACCOUNT",
+    "CARRIER_PICKUP",
+    "CUSTOMER_LABEL",
+    "CUSTOMER_PICKUP",
+    "CUSTOM_1",
+    "UPS_GROUND",
+    "FEDEX_GROUND",
+    "UPS_2_DAY_AIR",
+    "UPS_NEXT_DAY_AIR",
+    "PRIORITY_OVERNIGHT",
+    "FEDEX_EXPRESS_SAVER",
+    "UPS_WORLDWIDE_SAVER",
+    "INTERNATIONAL_ECONOMY",
+    "INTERNATIONAL_EXPRESS",
+    "UPS_WORLDWIDE_EXPRESS",
+    "INTERNATIONAL_CONNECT_PLUS"
+  ],
+  "autogenerateBuyerNumberAndAddressCode": true
+}

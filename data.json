@@ -13,7 +13,14 @@
 
     "adminApiData":{
         "adminApiUrl": "https://cognito-idp.us-east-1.amazonaws.com",
-        "clientId": "6vr3u9g8om5qa2rf0pd58q7qho"
+        "clientId": "6vr3u9g8om5qa2rf0pd58q7qho",
+        "baseUrl": "https://z15n1kno64.execute-api.us-east-1.amazonaws.com/Integration/px-api-gateway/"
+
+    },
+
+    "buyerApiData":{
+        "buyerApiUrl": "https://cognito-idp.us-east-1.amazonaws.com/",
+        "clientId" : "6vr3u9g8om5qa2rf0pd58q7qho"
 
     },
 
