@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { loginAdminAndSaveToken } from '../../Api/adminLogin';
 import { fetchOrderShippingOptions, getStocklistSettings } from '../../Api/adminApi';
 import { readApiJson } from '../../utils/apiFileManager';
-import { getAccountSettings } from '../../Api/accountSettings';
+import { getAccountSettings } from '../../Api/adminApi';
 
 test.skip('Admin can fetch order shipping options', async () => {
   // 1️⃣ Auth
