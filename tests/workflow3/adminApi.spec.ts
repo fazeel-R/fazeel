@@ -7,8 +7,6 @@ test(`Admin login api`, async({page})=>{
     await loginAdminAndSaveToken()
     await getStocklistSettings()
 
-
-
 })
 
 test(`Read sales order settings`, async({page})=>{
@@ -17,7 +15,7 @@ test(`Read sales order settings`, async({page})=>{
 
 
 })
- test.only(`Read account settings`, async({page})=>{
+ test(`Read account settings`, async({page})=>{
     await loginAdminAndSaveToken()
     await getAccountSettings()
 
