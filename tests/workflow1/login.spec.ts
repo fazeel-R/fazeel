@@ -14,6 +14,8 @@ describe(`Login`, ()=>{
     let buyerLogin = new BuyerLogin(page)
     await buyerLogin.loadUrl(creds.buyerUrl)
     await buyerLogin.loginDetail(creds.buyerCreds.userName, creds.buyerCreds.password)
+    // await page.locator(`[name="username"]`).fill(`fazeel@ncompass.inc`)
+    // await page.locator(`[name="password"]`).fill(`Admin123!`)
     await buyerLogin.login()
     await page.waitForTimeout(10000)
 

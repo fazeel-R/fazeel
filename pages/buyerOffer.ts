@@ -6,6 +6,10 @@ const offerPermission = require('../test-data/api/stocklist-settings.json')
 
 export class buyerOffer extends wrapperMethod{
 
+    async enableAcceptOffers(){
+        
+    }
+
     async loadUrl(url:string){
         await this.url(url)
 

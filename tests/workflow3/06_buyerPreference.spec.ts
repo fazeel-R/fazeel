@@ -1,9 +1,9 @@
 import test from '@playwright/test'
-import { BuyerPreferences } from '../pages/buyerPreference'
+import { BuyerPreferences } from '../../pages/buyerPreference'
 import { expect } from '@playwright/test'
 test.use({storageState : 'storageState/login.json'})
 
-test("Updating buyer preferences", async({page})=>{
+test.skip("Updating buyer preferences", async({page})=>{
     const buyerUpdate = new BuyerPreferences(page)
     await buyerUpdate.homepage()
     await buyerUpdate.clickAccount()

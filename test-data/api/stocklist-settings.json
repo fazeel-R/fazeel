@@ -456,7 +456,11 @@
         "gradeComparison": null
       }
     ],
-    "warehouseAcceptingOffer": [],
+    "warehouseAcceptingOffer": [
+      "INSTOCK",
+      "MA",
+      "AM"
+    ],
     "warehouseMinOrderQuantity": {
       "MA": null,
       "INSTOCK": null,
@@ -477,7 +481,7 @@
     "isOfferInsightsEnabled": false,
     "categorySaleOption": null,
     "hideListPriceForOfferSale": false,
-    "acceptOffer": false,
+    "acceptOffer": true,
     "checkoutSettings": null,
     "cartSettings": null,
     "displayPxnsItemNumber": false
