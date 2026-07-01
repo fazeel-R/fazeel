@@ -8,8 +8,8 @@ export class BuyerCart extends wrapperMethod {
 
     }
 
-    async navigatingToCart(locator: string) {
-        await this.clickButton(locator)
+    async navigatingToCart() {
+        await this.clickButton('[data-id="totalCartItems"]')
         //data-id="totalCartItems"
 
     }
@@ -22,13 +22,13 @@ export class BuyerCart extends wrapperMethod {
         if (visible) {
             while (count > 0) {
                 await deleteItems.first().click()
-                    const deleteConfirmButton = this.page.getByRole('button', { name: 'DELETE', exact: true });
+                const deleteConfirmButton = this.page.getByRole('button', { name: 'DELETE', exact: true });
 
-                    // We must wait for the confirm button to become enabled before clicking it.
-                    //await deleteConfirmButton.waitFor({ state: 'visible' })
-                    await deleteConfirmButton.click();
-                    await this.page.waitForTimeout(1000)
-                    count = await deleteItems.count()
+                // We must wait for the confirm button to become enabled before clicking it.
+                //await deleteConfirmButton.waitFor({ state: 'visible' })
+                await deleteConfirmButton.click();
+                await this.page.waitForTimeout(1000)
+                count = await deleteItems.count()
             }
         }
         else {
@@ -53,8 +53,9 @@ export class BuyerCart extends wrapperMethod {
                     await deleteConfirmButton.click();
                     await this.page.waitForTimeout(1000)
                     count = await deleteItems.count()
-                    
-            }}
+
+                }
+            }
             else {
                 console.log("No items to delete under offer under buyer review")
             }
@@ -62,7 +63,7 @@ export class BuyerCart extends wrapperMethod {
         }
     }
 
-    async deleteItemsFromOfferUnderAdminReview(){
+    async deleteItemsFromOfferUnderAdminReview() {
         const buyerReviewtab = await this.page.locator('[data-id="tab"]').nth(2).isEnabled()
         const deleteItems = this.page.locator('[data-id="deleteItems"]')
         if (buyerReviewtab) {
@@ -79,8 +80,9 @@ export class BuyerCart extends wrapperMethod {
                     await deleteConfirmButton.click();
                     await this.page.waitForTimeout(1000)
                     count = await deleteItems.count()
-                    
-            }}
+
+                }
+            }
             else {
                 console.log("No items to delete under offer under buyer review")
             }
@@ -88,4 +90,36 @@ export class BuyerCart extends wrapperMethod {
         }
 
     }
+
+    async deleteItemsFromOfferUnderAdminReview1() {
+        const adminReviewTab = this.page.locator('[data-id="tab"]').nth(2)
+
+        if (!(await adminReviewTab.isEnabled())) {
+            console.log('Admin review tab disabled')
+            return
+        }
+
+        await adminReviewTab.click()
+
+        const deleteItems = this.page.locator('[data-id="deleteItems"]')
+
+        while (await deleteItems.count() > 0) {
+            await deleteItems.first().click()
+
+            const confirmDelete = this.page.getByRole('button', {
+                name: 'DELETE',
+                exact: true,
+            })
+
+            // ✅ wait for dialog button only if it appears
+            await expect(confirmDelete).toBeVisible()
+            await confirmDelete.click()
+
+            // ✅ wait until item is actually removed
+            await expect(deleteItems).toHaveCount(
+                (await deleteItems.count()) - 1
+            )
+        }
+    }
+
 }

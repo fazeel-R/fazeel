@@ -1,4 +1,4 @@
-import { isGeneratorFunction } from "util/types";
+import { expect } from "@playwright/test";
 import { wrapperMethod } from "../wrappermethods.ts/wrapper1";
 const data = require('../data.json')
 
@@ -34,6 +34,7 @@ export class AcceptOffers extends wrapperMethod {
         if(!condition){
             await acceptOffer.click()
             await this.clickButton(`[data-id="saveChanges"]`)
+            await expect(this.page.getByRole('alert')).toHaveText('Changes saved successfully')
         }
 
         

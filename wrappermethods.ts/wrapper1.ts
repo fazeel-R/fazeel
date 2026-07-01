@@ -31,7 +31,7 @@ async price(){
 }
 
 async purchaseQty(Qty:string)  {
-    await this.page.locator(`#purchaseQuantity`).fill(`Qty`)
+    await this.page.locator(`#purchaseQuantity`).fill(Qty)
     
 }
 

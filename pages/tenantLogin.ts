@@ -8,7 +8,7 @@ export class TenantLogin extends wrapperMethod {
     }
 
     async loginDetail(userName: string, passWord: string) {
-        await this.inputText('[name="email"]', userName)
+        await this.inputText('[name="username"]', userName)
         await this.inputText('[name="password"]', passWord)
 
     }
